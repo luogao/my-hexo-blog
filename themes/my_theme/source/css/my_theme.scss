@@ -1,9 +1,64 @@
 @import "fonts.scss";
+@import "_variables.scss";
 
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
 
 body {
-  font-weight: 300;
-  margin: 0;
-  background: #ffffff;
-  font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    scroll-behavior: smooth;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+#content-outer {
+    max-width: 900px;
+    margin: 10px auto;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    .recent-post-item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#bottom-outer {
+    text-align: center;
+    font-size: 14px;
+    color: $copyright-color;
+    #bottom-inner {
+        #copyright {}
+    }
 }

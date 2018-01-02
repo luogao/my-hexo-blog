@@ -11,12 +11,14 @@ doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
     title= pageTitle
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
     link(rel="icon", href=config.root + 'img/favicon.png')
+    link()
   body
     header#menu-outer
       nav#menu-inner
@@ -30,14 +32,12 @@ html(lang=config.language)
           block content
     footer#bottom-outer
       #bottom-inner
-        span Site construction by
-        span= ' ' + config.author + ' '
-        span using
+        span 由
         a(href='http://hexo.io')
-          span hexo blog framework
-        span .
+          span  Hexo 
+        span 强力驱动
         br
-        a(href=config.root) Home
+        p#copyright Copyright © 2018 www.lglzy.com All Rights Reserved
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
