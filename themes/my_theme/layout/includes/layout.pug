@@ -5,7 +5,7 @@
 - if (is_category()) pageTitle = 'Category: ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += config.title
+- pageTitle += ' - ' + config.title
 
 doctype html
 html(lang=config.language)
@@ -18,7 +18,6 @@ html(lang=config.language)
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
     link(rel="icon", href=config.root + 'img/favicon.png')
-    link()
   body
     header#menu-outer
       nav#menu-inner

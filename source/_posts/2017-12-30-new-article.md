@@ -7,3 +7,7 @@ tags: test
 # test
 
 你好， 这是我的新的Hexo博客， 欢迎光临
+
+``` bash
+$ hexo new "My New Post"
+```
