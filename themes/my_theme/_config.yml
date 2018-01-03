@@ -19,3 +19,6 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/my_theme.js
+
+# highlight theme
+highlight_theme: vs2015

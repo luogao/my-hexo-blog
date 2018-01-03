@@ -5,7 +5,7 @@
 - if (is_category()) pageTitle = 'Category: ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' - ' + config.title
+- pageTitle? pageTitle = pageTitle + ' - ' + config.title :  pageTitle = config.title
 
 doctype html
 html(lang=config.language)
@@ -13,6 +13,7 @@ html(lang=config.language)
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
     title= pageTitle
+    link(rel="stylesheet", href= theme.highlight_theme ?'//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/'+ theme.highlight_theme + '.min.css':'//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css' )
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from config.yml
       each url in theme.stylesheets
