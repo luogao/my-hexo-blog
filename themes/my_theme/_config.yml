@@ -10,7 +10,7 @@ menu:
   Archives: /archives
 
 # Miscelaneous
-favicon: /favicon.ico
+favicon: /images/favicon.ico
 
 # stylesheets loaded in the <head>
 stylesheets:

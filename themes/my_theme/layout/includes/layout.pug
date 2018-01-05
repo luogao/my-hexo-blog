@@ -11,6 +11,7 @@ doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
     title= pageTitle
     link(rel="stylesheet", href= theme.highlight_theme ?'//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/'+ theme.highlight_theme + '.min.css':'//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css' )
@@ -18,7 +19,7 @@ html(lang=config.language)
       //- stylesheets list from config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
-    link(rel="icon", href=config.root + 'img/favicon.png')
+    link(rel="icon", href=theme.favicon)
   body
     header#menu-outer
       nav#menu-inner
