@@ -75,7 +75,7 @@
 
 #bottom-outer {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: $copyright-color;
     #bottom-inner {
         height: 100%;
@@ -90,6 +90,7 @@
 
 .hljs{
     padding: 0 0.5em;
+    margin: 0;
     .gutter{
         .line{
             opacity: .3;
