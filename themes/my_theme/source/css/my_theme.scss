@@ -1,6 +1,23 @@
 @import "fonts.scss";
 @import "_variables.scss";
 @import "_common.scss";
+
+#menu-btn{
+    position: fixed;
+    top: 60px;
+    border:1px solid #000;
+    height: 30px;
+    right: 25px;
+    width: 30px;
+    .menu-line{
+        width: 30px;
+        display: block;
+        height: 1px;
+        background: $link-color;
+        position: absolute;
+    }
+}
+
 #menu-outer {
     position: fixed;
     top: 0;
@@ -48,7 +65,7 @@
 }
 
 #content-outer {
-    max-width: 900px;
+    max-width: 660px;
     margin: 70px auto 20px auto;
     width: 100%;
     -webkit-box-flex: 1;
