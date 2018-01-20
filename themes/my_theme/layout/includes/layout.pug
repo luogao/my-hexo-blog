@@ -25,10 +25,15 @@ html(lang=config.language)
       span.menu-line
       span.menu-line
       span.menu-line
-    header#menu-outer
-      nav#menu-inner
+    #full-screen-nav
+      ul
         each url, label in theme.menu
-          a(href=url)= label
+          li
+            a(href=url)= label
+    //- header#menu-outer
+    //-   nav#menu-inner
+    //-     each url, label in theme.menu
+    //-       a(href=url)= label
     #content-outer
       #content-inner
         if body
