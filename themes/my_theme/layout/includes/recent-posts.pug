@@ -3,15 +3,14 @@ if page.posts.length > 0
   #recent-posts
     each post,index in page.posts.sort('date', -1).limit(10).toArray()
       .recent-post-item
-        h1.post-title
-          a(href=config.root + post.path)= post.title
         .post-meta-info
           if post.date
             time(datetime=post.date.toJSON())= date(post.date, date_format)
-          span!=' | '
           if post.tags
             each item in post.tags.data
               span.post-tag!=item.name
             else
               span.post-tag!="无"
+        h1.post-title
+          a(href=config.root + post.path)= post.title
         .post-excerpt!= post.excerpt?post.excerpt:post.content

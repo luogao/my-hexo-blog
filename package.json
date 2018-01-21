@@ -6,7 +6,7 @@
     "version": "3.4.4"
   },
   "scripts": {
-    "dev": "hexo s -o"
+    "dev": "hexo s"
   },
   "dependencies": {
     "hexo": "^3.2.0",
