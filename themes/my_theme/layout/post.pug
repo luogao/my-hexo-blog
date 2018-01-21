@@ -3,10 +3,9 @@ extends includes/layout.pug
 block content
   article#post
     h1.page-title= page.title
-    .post-meta-info
+    .page-meta-info
       if page.date
         time(datetime=page.date.toJSON())= date(page.date, date_format)
-      span!=' | '
       if page.tags
         each item in page.tags.data
           span.post-tag!=item.name

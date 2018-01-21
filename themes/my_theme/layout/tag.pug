@@ -2,16 +2,20 @@ extends includes/layout.pug
 
 block content
   div#tag
-    h1= 'Tag: ' + page.tag
-    - page.posts.each(function(article){
-      if article.link
-        a(href=url_for(article.link) target="_blank")
-          = article.title || 'No Title'
-        time(datetime=date_xml(article.date))= date(article.date)
-      else
-        a(href=url_for(article.path))= article.title || 'No Title'
-        time(datetime=date_xml(article.date))= date(article.date)
-      br.clear
-    - })
-  div!= paginator()
+    h1.page-title= page.tag
+    .page-meta-info!="共"+page.posts.length+"条目"
+    .item-list
+      ul
+        - page.posts.each(function(article){
+          if article.link
+            li
+              time(datetime=date_xml(article.date))= date(article.date)
+              a(href=url_for(article.link) target="_blank")
+                = article.title || 'No Title'
+          else
+            li
+              time(datetime=date_xml(article.date))= date(article.date)
+              a(href=url_for(article.path))= article.title || 'No Title'
+        - })
+  div#pagination!= paginator()
 
