@@ -13,5 +13,5 @@ if page.posts.length > 0
               span.post-tag!="无"
         h1.post-title
           a(href=config.root + post.path)= post.title
-        .post-excerpt!= post.excerpt?post.excerpt:post.content
+        .post-excerpt!= post.excerpt?post.excerpt:'无'
         a.read-more(href=config.root + post.path)!="Read"

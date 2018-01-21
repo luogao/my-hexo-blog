@@ -37,7 +37,7 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     h1,h2,h3,h4,h5,h6{
-        font-weight: 300;
+        font-weight: 600;
     }
 }
 
@@ -50,4 +50,12 @@ a {
 }
 time{
     font-size: 12px;
+}
+blockquote{
+        border-left: 2px solid $link-color;
+        background: #F6F6F6;
+        color: #555;
+        padding: 10px 20px;
+        margin-left: 0;
+        margin-right: 0;
 }
