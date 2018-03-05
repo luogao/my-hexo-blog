@@ -130,7 +130,7 @@ h1.page-title {
     }
     .page-title {
         text-align: left;
-        font-size: 32px;
+        font-size: 24px;
         margin: 0 0 45px;
         letter-spacing: 1px;
         font-weight: 400;
@@ -177,9 +177,10 @@ h1.page-title {
 #content-outer {
     max-width: 600px;
     margin: 20px auto 20px auto;
-    width: 100%;
     -webkit-box-flex: 1;
+    padding: 0 30px 50px;
     -ms-flex: 1;
+    box-sizing: content-box;
     flex: 1;
     position: relative;
     .recent-post-item {
@@ -190,11 +191,11 @@ h1.page-title {
             font-weight: 600;
             font-size: 14px;
         }
-        h1.post-title {
+        h2.post-title {
             margin-top: 0;
             text-align: left;
             font-weight: 100;
-            font-size: 30px;
+            font-size: 28px;
             margin: 5px 0;
             a {
                 color: $font-dark;

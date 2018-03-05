@@ -22,23 +22,9 @@ body {
         width: 100vw;
     }
     scroll-behavior: smooth;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     font-weight: 400;
-    min-height: 100%;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    h1,h2,h3,h4,h5,h6{
-        font-weight: 600;
-    }
 }
 
 a {

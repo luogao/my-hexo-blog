@@ -4,7 +4,7 @@ if page.posts.length > 0
     each post,index in page.posts.sort('date', -1).limit(10).toArray()
       .recent-post-item
         
-        h1.post-title
+        h2.post-title
           a(href=config.root + post.path)= post.title
         //- .post-excerpt!= post.excerpt?post.excerpt:'无'
         .info-block
