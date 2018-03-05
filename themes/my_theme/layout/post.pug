@@ -2,7 +2,6 @@ extends includes/layout.pug
 
 block content
   article#post
-    h1.page-title= page.title
     .page-meta-info
       if page.date
         time(datetime=page.date.toJSON())= date(page.date, date_format)
@@ -11,5 +10,6 @@ block content
           span.post-tag!=item.name
         else
           span.post-tag!="无"
+    h1.page-title= page.title
     .post-content!= page.content
   div!= paginator()

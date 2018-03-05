@@ -126,7 +126,14 @@ h1.page-title {
         color: $text-blog-content-color;
     }
     .page-meta-info {
-        text-align: center;
+        text-align: left;
+    }
+    .page-title {
+        text-align: left;
+        font-size: 32px;
+        margin: 0 0 45px;
+        letter-spacing: 1px;
+        font-weight: 400;
     }
 }
 
@@ -157,9 +164,19 @@ h1.page-title {
     }
 }
 
+#header {
+    letter-spacing: 5px;
+    margin: 50px auto 15px;
+    text-align: center;
+    a {
+        color: #444;
+        font-size: 16px;
+    }
+}
+
 #content-outer {
-    max-width: 660px;
-    margin: 70px auto 20px auto;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
     width: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -170,13 +187,13 @@ h1.page-title {
             text-transform: uppercase;
             display: block;
             text-align: right;
-            font-weight: 100;
-            padding-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
         }
         h1.post-title {
             margin-top: 0;
             text-align: left;
-            font-weight: 600;
+            font-weight: 100;
             font-size: 30px;
             margin: 5px 0;
             a {
@@ -193,7 +210,7 @@ h1.page-title {
         //         box-shadow: 0px 10px 40px -10px rgba(0, 64, 128, 0.2);
         padding: 10px;
         &:not(:last-child) {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
     }
 }
@@ -241,10 +258,19 @@ h1.page-title {
     }
 }
 
+.info-block {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .read-more {
+        flex: 1;
+    }
+}
+
 //Tag
 #tag {
     padding: 10px;
-    .page-meta-info{
+    .page-meta-info {
         text-align: center;
     }
     .item-list {
@@ -254,7 +280,7 @@ h1.page-title {
             margin: 0;
             list-style: none;
             li {
-                &:not(:last-child){
+                &:not(:last-child) {
                     border-bottom: 1px solid $font-dark;
                 }
                 display: flex;
@@ -270,7 +296,7 @@ h1.page-title {
                     white-space: nowrap;
                     &::after {
                         content: '|';
-                        padding:0 30px;
+                        padding: 0 30px;
                     }
                 }
             }
