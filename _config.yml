@@ -7,12 +7,12 @@ title: Roy's Blog
 subtitle:
 description:
 author: Roy Luo
-language: zh-CN
+language: zh-cn
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://lglzy.cn
 root: /
 permalink: :year/:month/:day/
 permalink_defaults:
@@ -72,9 +72,15 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: my_theme
+theme: apollo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+archive_generator:
+  per_page: 0
+  yearly: false
+  monthly: false
+  daily: false
