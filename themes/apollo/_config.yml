@@ -3,7 +3,7 @@ menu:
     Archive: /archives/
     Weibo: https://weibo.com/2041843592
     GitHub: https://github.com/luogao
-    # Rss: /atom.xml
+    Rss: /atom.xml
 
 favicon: /favicon.png
 logo: /favicon.png
