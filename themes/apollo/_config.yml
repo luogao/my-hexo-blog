@@ -1,0 +1,21 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    Weibo: https://weibo.com/2041843592
+    GitHub: https://github.com/luogao
+    # Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /favicon.png
+
+# Comment
+# e.g disqus: seansun
+disqus: https-www-lglzy-cn-blog
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-117188588-1
+
+# Copyright Infomation
+startyear: 2017
