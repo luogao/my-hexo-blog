@@ -78,13 +78,6 @@ theme: apollo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ftpsync
-  host: 103.202.94.6
-  user: roy
-  pass: xZ7398cGdJmtZWt
-  remote: /home/www/root/blog/
-  port: 2828
-  verbose: true
-
 
 archive_generator:
   per_page: 0
