@@ -5,7 +5,7 @@
 # Site
 title: Roy's Blog
 subtitle:
-description:
+description: A coder's life, learning and sharing, all in Roy's Blog
 author: Roy Luo
 language: zh-cn
 timezone:
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://lglzy.cn/blog
 root: /blog/
-permalink: :year/:month/:day/
+permalink: :year/:month/:day/:id/
 permalink_defaults:
 
 # Directory
@@ -77,6 +77,7 @@ theme: apollo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+
 
 
 archive_generator:
