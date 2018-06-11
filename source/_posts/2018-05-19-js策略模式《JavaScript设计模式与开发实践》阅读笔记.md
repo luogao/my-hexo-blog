@@ -1,5 +1,5 @@
 ---
-title: js策略模式《JavaScript设计模式与开发实践》阅读笔记
+title: JS策略模式《JavaScript设计模式与开发实践》阅读笔记
 date: 2018-05-19 16:41:39
 tags:
 ---
@@ -203,3 +203,7 @@ console.log(calculateBonus('S', 20000)) // 80000
 - 当然不是所有的东西都要分来分去，一个简单的需求为了设计模式而去设计模式也是不可取的。
 
 **love & peace**
+
+## 参考
+
+《JavaScript设计模式与开发实践》—— 曾探

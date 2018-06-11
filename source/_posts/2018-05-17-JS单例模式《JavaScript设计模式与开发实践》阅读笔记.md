@@ -181,3 +181,7 @@ document.getElementById('loginBtn').onclick = function() {
 博客地址：https://www.lglzy.cn/blog
 
 邮箱：luogao_lg@sina.com
+
+## 参考
+
+《JavaScript设计模式与开发实践》—— 曾探
