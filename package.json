@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "hexo s",
+    "start": "hexo s",
     "build": "hexo clean && hexo g && hexo d"
   },
   "dependencies": {
