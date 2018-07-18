@@ -46,3 +46,12 @@ mixin post(item)
             +postInfo(item)
             .post-content
                 != item.content
+                blockquote
+                  p 
+                    strong 本文作者： 
+                    !=config.author
+                  p 
+                    strong 本文链接： 
+                    a(href= url_for(item.path) ,title=item.title)
+                        !=item.title
+                  

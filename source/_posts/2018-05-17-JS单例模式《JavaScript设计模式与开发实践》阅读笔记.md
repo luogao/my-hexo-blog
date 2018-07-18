@@ -178,7 +178,7 @@ document.getElementById('loginBtn').onclick = function() {
 
 感谢阅读。
 
-博客地址：https://www.lglzy.cn/blog
+博客地址：https://www.lglzy.cn
 
 邮箱：luogao_lg@sina.com
 
