@@ -1,16 +1,20 @@
 ---
-title: react-native-performance
+title: React Native 性能优化 （官网指南搬运）
 date: 2019-01-18 17:08:39
 tags:
 ---
 
+最近在写React-Native 趁着这两天需求差不多完成了，实践了一些优化项。
+
+记录于此
+
+<!-- more -->
 
 ## Life sucks
 
 Performance
 
 参考 [React native Performance](https://facebook.github.io/react-native/docs/performance)
-
 
 
 ##查看性能
@@ -176,6 +180,17 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs({
 同理，还在`FlatList`  的`onReachEnd`实践了这个操作，来避免iOS 中滚动回弹时执行操作的卡顿。
 
 
+以上，记录了近期写React-Native 的一些实践过的优化项。
 
+## 最后
+
+路漫漫其修远兮，吾将上下而求索
+
+May love & peace be with you 
+
+
+## 参考
+
+- [React native Performance](https://facebook.github.io/react-native/docs/performance)
 
 
