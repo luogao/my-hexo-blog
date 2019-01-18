@@ -17,7 +17,7 @@ Performance
 参考 [React native Performance](https://facebook.github.io/react-native/docs/performance)
 
 
-##查看性能
+## 查看性能
 
 打开开发者菜单（摇晃手机打开）👉 打开`Show Perf Monitor` 可以看到下图显示框
 
@@ -27,7 +27,7 @@ UI 和 JS 的帧数都稳定保持在60 为最优情况。
 
 
 
-##JS 的单线程
+## JS 的单线程
 
 所有的事件处理，API请求，等操作都在这个线程上，在`this.setState`大量数据时，状态的变动会导致**re-render**，这期间所有由JavaScript 控制的动画都会出现卡顿掉帧
 
@@ -35,7 +35,7 @@ UI 和 JS 的帧数都稳定保持在60 为最优情况。
 
 
 
-##开发环境性能比生产环境差
+## 开发环境性能比生产环境差
 
 开发环境下框架会有很多别的操作比如warning error 的输出，类型检测等等。
 
