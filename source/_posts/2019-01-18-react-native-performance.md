@@ -1,9 +1,14 @@
 ---
-title: react-native-performance
+title: React Native 性能优化 （官网指南搬运）
 date: 2019-01-18 17:08:39
 tags:
 ---
 
+最近在写React-Native 趁着这两天需求差不多完成了，实践了一些优化项。
+
+记录于此
+
+<!-- more -->
 
 ## Life sucks
 
@@ -12,8 +17,7 @@ Performance
 参考 [React native Performance](https://facebook.github.io/react-native/docs/performance)
 
 
-
-##查看性能
+## 查看性能
 
 打开开发者菜单（摇晃手机打开）👉 打开`Show Perf Monitor` 可以看到下图显示框
 
@@ -23,7 +27,7 @@ UI 和 JS 的帧数都稳定保持在60 为最优情况。
 
 
 
-##JS 的单线程
+## JS 的单线程
 
 所有的事件处理，API请求，等操作都在这个线程上，在`this.setState`大量数据时，状态的变动会导致**re-render**，这期间所有由JavaScript 控制的动画都会出现卡顿掉帧
 
@@ -31,7 +35,7 @@ UI 和 JS 的帧数都稳定保持在60 为最优情况。
 
 
 
-##开发环境性能比生产环境差
+## 开发环境性能比生产环境差
 
 开发环境下框架会有很多别的操作比如warning error 的输出，类型检测等等。
 
@@ -176,6 +180,17 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs({
 同理，还在`FlatList`  的`onReachEnd`实践了这个操作，来避免iOS 中滚动回弹时执行操作的卡顿。
 
 
+以上，记录了近期写React-Native 的一些实践过的优化项。
 
+## 最后
+
+路漫漫其修远兮，吾将上下而求索
+
+May love & peace be with you 
+
+
+## 参考
+
+- [React native Performance](https://facebook.github.io/react-native/docs/performance)
 
 
