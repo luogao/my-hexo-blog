@@ -8,6 +8,7 @@ tags:
 
 利用`.bash_profile` 可以为Terminal 设置快捷命令
 
+<!-- more -->
 
 
 ## 实现方法
