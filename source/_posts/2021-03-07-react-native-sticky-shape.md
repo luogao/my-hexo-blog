@@ -8,12 +8,6 @@ tags: react-native, reanimated, react-native-svg, react-native-gesture-handler, 
 
 <!-- more -->
 
-https://imgtu.com/i/6M2HbT
-https://imgtu.com/i/6M2qVU
-https://imgtu.com/i/6M27rV
-https://imgtu.com/i/6M2LaF
-https://imgtu.com/i/6M2O54
-https://imgtu.com/i/6M2jPJ
 ## 效果
 
 {% asset_img demo.gif demo %}
